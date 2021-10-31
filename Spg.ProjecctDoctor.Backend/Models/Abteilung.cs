@@ -10,8 +10,10 @@ namespace Spg.ProjectDoctor.Backend.Domain
    {
         public string Kuerzel { get; set; }  //PK
         public int Id { get; set; }
-        public NameRecord nameRecord { get; set; } = default!;
-        public Krankenhaus krankenhaus { get; set; } = null!; // Referenz zum Krankenhaus
-        public IEnumerable<Arzt> aerzte { get; set; } = new List<Arzt>();
+        public NameRecord NameRecord { get; set; } = default!;
+
+        public string KrankenhausId { get; set; } = string.Empty;
+        public Krankenhaus Krankenhaus { get; set; } = null!; // Referenz zum Krankenhaus
+        public IEnumerable<Arzt> Aerzte { get; set; } = new List<Arzt>();
    }
 }

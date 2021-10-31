@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spg.ProjecctDoctor.Backend.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace Spg.ProjectDoctor.Backend.Domain
         public Adresse Adresse { get; set; } = default!;
         public IEnumerable<Abteilung> abteilungen { get; set; } = new List<Abteilung>(); //Liste von Abteilungen
 
+        public string GeschaeftsFuerherId { get; set; } = string.Empty;
+        public GeschaeftsFuerher GeschaeftsFuerher { get; set; } = null!;
 
 
 

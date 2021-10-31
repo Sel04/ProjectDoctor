@@ -16,8 +16,7 @@ namespace Spg.ProjectDoctor.Backend.Domain.Models
     {
         public int Id { get; set; }
         public string SozialVersicherungnummer => $"{Versicherungsnummer} {BirthDate}";
-        public string Firstname { get; set; } = string.Empty;
-        public string Lastname { get; set; } = string.Empty;
+        public NameRecord NameRecord { get; set; } = default!;
         public DateTime BirthDate { get; set; }
         public int Old { get {
                 return DateTime.Now.Year - BirthDate.Year;  
