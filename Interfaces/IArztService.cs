@@ -12,5 +12,7 @@ namespace Spg.ProjecctDoctor.Backend.Interfaces
         IEnumerable<Arzt> GetAll();
         IEnumerable<Arzt> GetAllArztByAbteilung(string abteilung_kuerzel);
         IEnumerable<Arzt> GetAllArztByOrdination(string ordination_kuerzel);
+
+        IEnumerable<Arzt> GetAllArztByAerzteKammer(string kammerId);
     }
 }

@@ -28,7 +28,7 @@ namespace Spg.ProjecctDoctor.Backend.Services
         public IEnumerable<Ordination> GetAllWithManager()
         {
             return _context.Ordinations
-                .Include(s => s.Manager)
+                .Include(s => s.Managers)
                 .ToList();
         }
     }

@@ -31,6 +31,13 @@ namespace Spg.ProjecctDoctor.Backend.Services
                  .ToList();
         }
 
+        public IEnumerable<Arzt> GetAllArztByAerzteKammer(string kammerId)
+        {
+            return _context.Arzts
+                .Where(s => s.KammerId == kammerId)
+                .ToList();
+        }
+
         public IEnumerable<Arzt> GetAllArztByOrdination(string ordination_kuerzel)
         {
             return _context.Arzts

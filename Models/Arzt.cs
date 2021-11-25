@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spg.ProjectDoctor.Backend.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,8 @@ namespace Spg.ProjectDoctor.Backend.Domain
         public decimal Gehalt { get; set; }
         public string Telefonnummer { get; set; } = string.Empty;
 
+        public string KammerId { get; set; } = string.Empty;
+        public AerzteKammer kammer { get; set; }=null!;
         public string AbteilungId { get; set; } = string.Empty;
         public Abteilung Abteilung { get; set; } = null!;  // Referenz zur Abteilung
         public string OrdinationId { get; set; } = string.Empty;

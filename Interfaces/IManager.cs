@@ -10,7 +10,7 @@ namespace Spg.ProjectDoctor.Interfaces
     {
         IEnumerable<Manager> getAll();
        
-        IEnumerable<Manager> ListArztByOrdination(string OrdiantionId);
+        IEnumerable<Manager> ListManagersByOrdination(string OrdiantionId);
     }
 }
 

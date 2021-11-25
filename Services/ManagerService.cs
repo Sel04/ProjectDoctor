@@ -25,7 +25,7 @@ namespace Spg.ProjectDoctor.Services
         
 
 
-        IEnumerable<Manager> IManager.ListArztByOrdination(string OrdiantionId)
+       public IEnumerable<Manager> ListManagersByOrdination(string OrdiantionId)
         {
             return _context.Managers
                 .Where(m => m.OrdinationId == OrdiantionId)
